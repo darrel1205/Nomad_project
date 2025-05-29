@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="trends.html">KNOW ME WELL</a>
+            <a href="personality.html">PERSONALITY TYPES</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PORTAFOGLIO</h1>
+            <a href="about.html" class="cta-button">START →</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/bee.png" alt="Logo">
+        </div>
+    </section>
+    <div class="reference-trigger fade-in">
+        <button onclick="toggleReferenceModal()">Click here to see references (APA Style)</button>
+    </div>
+    <div id="referenceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleReferenceModal()">&times;</span>
+            <h3>References (APA Style)</h3>
+            <div class="apa-references">
+                <p><i>Aniwatch Free Anime Streaming Homepage. (n.d.). Aniwatchtv.to. https://aniwatchtv.to/home</i></p>
+                <p>Old project of mine:</p>
+                <img src="img/homeref.jpg" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <script src=script.js></script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="author">
+        <div class="nav-container">
+            <a class="nav-logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">&lt;</a>
+                <a href="index.html">HOME</a>
+                <a href="trends.html">KNOW ME WELL</a>
+                <a href="personality.html">PERSONALITY TYPES</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+    <main id="author fade-in">
+        <div class="clauthor">
+        <div class="authorclass">
+            <div class="text-section">
+            <h1>AUTHOR</h1>
+            <p>I'm Charles Darrel B. Nicart, 19 years old, a 2nd year college student at Technological University of the Philippines. I'm taking the course of Bachelor of Technical-Vocational Teacher Education major in Computer Programming, and this is my portfolio for PROG4 </p>
+            </div>
+            <div class="image-section">
+            <img src="img/aut.jfif" alt="Window View" />
+            </div>
+        </div>
+        </div>
+    </main>
+    <section class="category fade-in">
+        <h1>Get to know me</h1>
+        <a href="#author" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Author</h3>
+        </a>
+        <a href="#exp" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Expertise</h3>
+        </a>
+        <a href="#expe" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Work Experience</h3>
+        </a>
+        <a href="#portfolio" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Hobbies</h3>
+        </a>
+        <a href="#relevant" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Projects</h3>
+        </a>
+        <a href="#cont" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Contacts</h3>
+        </a>
+    </section>
+    <section class="grid-section fade-in" id="exp">
+        <div class="grid-box bglang"></div>
+        <div class="grid-box content-box" style="background-color: #FFE6D0; color: black;">
+            <h2 class="box-title">Coding Expertise</h2>
+            <p class="box-desc">These include markup, stylesheet, and programming languages that I learned during my second year here at TUP Cavite. Throughout that year, I gained hands-on experience with HTML, CSS, and JavaScript, which helped strengthen my foundational web development skills.</p>
+        </div>
+          <div class="grid-box content-box" style="background-color: #FFE6D0; color: black; ">
+            <h2 class="box-title">HTML</h2>
+            <img src="img/html.jpg" alt="HTML Image" class="box-image">
+            <p class="box-desc">Using HTML, I’ve created some complexly structured websites. It was the first thing I learned and remains the most important part of building this website. I would rate my expertise in HTML as ⭐⭐⭐⭐★.</p>
+        </div>
+
+        <div class="grid-box content-box" style="background-color: #000000;">
+            <h2 class="box-title">CSS</h2>
+            <img src="img/css.png" alt="CSS Image" class="box-image">
+            <p class="box-desc">I try to be creative when designing websites, and by using CSS, I’ve been able to create some visually appealing designs. However, I still have a lot of room for improvement and learning. I would rate my expertise in CSS as ⭐⭐⭐★★. </p>
+        </div>
+
+        <div class="grid-box content-box" style="background-color: #000000;">
+            <h2 class="box-title">JavaScript</h2>
+            <img src="img/js.png" alt="JavaScript Image" class="box-image">
+            <p class="box-desc">Using JavaScript has made my websites more interactive. However, this is probably my weakest area, and I would rate my expertise in JavaScript as ⭐⭐★★★.</p>
+        </div>
+
+        <div class="grid-box content-box" style="background-color: #FFE6D0; color: black;">
+            <h2 class="box-title">Python</h2>
+            <img src="img/py.webp" alt="Python Image" class="box-image">
+            <p class="box-desc">Using Python, I’ve been able to automate tasks and solve problems efficiently. Although I’m still learning, I would rate my expertise in Python as ⭐⭐⭐★★.</p>
+        </div>
+    </section>
+    <section class="experience-section fade-in" id="expe">
+        <h2 class="experience-title">EXPERIENCE</h2>
+        <div class="experience-content">
+            <img src="img/mcdop.jpg" alt="Experience Image" class="experience-image">
+            <p class="experience-description">
+            I worked as a crew in McDonald's Anabu for almost a year,<br>
+            and it was my first ever job. I wanted to have an experience<br>
+            and also to earn money, and so I decided to be a working student.
+            </p>
+        </div>
+    </section>
+    <section class="page-section bg-black fade-in" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Hobbies</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/cleaning.jpg" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Household chores</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/yar.jpg" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Billiards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/anime.webp" alt="Watching anime/movies" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Watching anime/movie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/solo.jpg" alt="Read" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Reading manhwa/manga</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/guitar.jpg" alt="Plat" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Guitar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/basketball.jpg" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Basketball</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Household chores</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/cleaning.jpg" alt="..." />
+                                <p>Growing up my parents taught me how to do chores. I like cleaning so it just became a hobby for me</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Billiards</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/yar.jpg" alt="..." />
+                                <p>Billards is a fun hobby of mine to pass time during our breaks here at TUP Cavite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Watching anime/movie</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/anime.jpg" alt="..." />
+                                <p>Watching anime and movies became my hobby unknowingly. They make me feel different emotions that I just got hooked on it</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Reading manga/manhwa</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/manhwa.jpg" alt="..." />
+                                <p>Same as watching a movie, I love reading great stories. I got really into it during pandemic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Playing Guitar</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/guitar.jpg" alt="..." />
+                                <p>Playing guitar is an old hobby of mine. Me and my friends used to jam outside my house everynight. So although I don't play much this day I still love playing guitar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Basketball</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/basketball.jpg" alt="Basketball" />
+                                <p>I used to play basketball everyday. it is my favorite sport even tho I haven't been able to play much after pandemic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="projects-section fade-in" id="relevant">
+        <h2 class="projects-title">RELEVANT PROJECTS</h2>
+
+        <div class="project">
+            <div class="project-image">
+            <a href="img/metals.jpg" target="_blank">
+                <img src="img/metals.jpg" alt="Project Image 1">
+            </a>
+            </div>
+            <div class="project-text">
+            <h3>METALS</h3>
+            <p>
+                Our task was to create a prototype of a plane using metal.
+                It took a lot of effort both individually and as a group, from
+                cutting the parts, to polishing them, and assembling everything to
+                make sure it all fit together. It was a hard, fun, and memorable project,
+                with everyone staying late just to keep polishing the metal.
+            </p>
+            </div>
+        </div>
+
+        <div class="project reverse">
+            <div class="project-text">
+            <h3>Prog2</h3>
+            <p>
+                This is the final project of our PROG2 we we're task to create any website 
+                we want that is useful. I chose to create an anime website. It was a very big 
+                project of mine creating almost a hundred html file for every episode. It was 
+                very stressful especially closing in to the deadline I was losing hope but I was 
+                very happy with the outcome. I was very proud of the design and my teacher 
+                commended me for my websites
+            </p>
+            </div>
+            <div class="project-image">
+            <a href="img/prog2.jpg" target="_blank">
+                <img src="img/prog2.jpg" alt="Project Image 2">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section fade-in" id="cont">
+        <div class="contact-content">
+            <div class="contact-details">
+            <h2>CONTACT DETAILS</h2>
+            <p><strong>EMAIL ADDRESS:</strong><br>darrelnicart@gmail.com</p>
+            <p><strong>FACEBOOK:</strong><br>Darrel Nicart</p>
+            <p><strong>INSTAGRAM:</strong><br>nicartdarrel</p>
+            </div>
+            <div class="contact-image">
+            <img src="img/author.jpg" alt="Contact Illustration">
+            </div>
+        </div>
+    </section>
+    <div class="reference-trigger fade-in">
+        <button onclick="toggleReferenceModal()">Click here to see references (APA Style)</button>
+    </div>
+    <div id="referenceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleReferenceModal()">&times;</span>
+            <h3>References (APA Style)</h3>
+            <div class="apa-references">
+                <p><i>Dani Krossing. (2022, December 11). 1 | INTRODUCTION TO HTML & CSS | 2023 | Learn HTML and CSS Full Course for Beginners. YouTube. https://www.youtube.com/watch?v=v8jDnBYc0bs&list=PL0eyrZgxdwhwP0AxnbBiDBCi53LK9uCMZ</i></p>
+                <p><i>Agency - One Page Bootstrap Theme. (n.d.). Start Bootstrap. https://startbootstrap.com/theme/agency</i></p>
+                <p>Old project of mine:</p>
+                <img src="img/aboutref.jpg" alt="Logo">
+                <img src="img/aboutref2.jpg" alt="Logo">
+                <img src="img/aboutref3.jpg" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content fade-in">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>omad</span>
+            </div>
+            <div class="social-media">
+                <span>Follow me</span>
+                <a href="https://www.facebook.com/charles.nicart.9/" target="_blank"><img src="img/fb-white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/nicartdarrel/" target="_blank"><img src="img/ig-white.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="quote">
+            <p>"There are many types of monsters that scare me: Monsters who cause trouble without showing themselves, monsters who abduct children, monsters who devour dreams, monsters who suck blood... and then, monsters who tell nothing but lies. Lying monsters are a real nuisance: They are much more cunning than others. They pose as humans even though they have no understanding of the human heart; they eat even though they’ve never experienced hunger; they study even though they have no interest in academics; they seek friendship even though they do not know how to love. If I were to encounter such monsters, I would likely be eaten by them... because in truth, I am that monster." - L</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |   
+            <a href="trends.html">Know me well</a> |
+            <a href="personality.html">Personality types</a> |
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="about.html">About</a>
+        </div>
+        <div class="copyright">
+            © 2025 - 2030 Nomad | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

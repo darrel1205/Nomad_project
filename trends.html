@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know me well</title>
+    <link rel="stylesheet" href="trends.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">&lt;</a>
+                <a href="index.html">HOME</a>
+                <a href="trends.html">KNOW ME WELL</a>
+                <a href="personality.html">PERSONALITY TYPES</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Know me well</h2>
+        <div class="row">
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Hobby</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/hobby.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Flower/Ball</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/ball.webp"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Color</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/color.jpg"></div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Season</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/season.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Character</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/character.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Dessert</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/dessert.jpeg"></div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Food</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/food.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Place</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/place.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Time of the Day</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/time.webp"></div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Emoji</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/emoji.avif"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Zodiac sign</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/zodiac.webp"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Cartoon</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/cartoon.webp"></div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Symbol</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/symbol.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Animal</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/dino.jpg"></div>
+                </div>
+            </button>
+            <button class="flip-box" onclick="flipCard(this)">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h1>Drinks</h1>
+                    </div>
+                    <div class="flip-box-back"><img src="img/drinks.webp"></div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="reference-trigger fade-in">
+        <button onclick="toggleReferenceModal()">Click here to see references (APA Style)</button>
+    </div>
+    <div id="referenceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleReferenceModal()">&times;</span>
+            <h3>References (APA Style)</h3>
+            <div class="apa-references">
+                <p><i>Navya Netan. (2023, June 28). Sakamoto Days Capítulo 125 Fecha de lanzamiento, especulación, lectura en línea. Epic Dope. https://es.epicdope.com/sakamoto-days-cap%C3%ADtulo-125-fecha-de-lanzamiento-especulaci%C3%B3n-leer-en-l%C3%ADnea/</i></p>
+                <p><i>Change to legal guarding position recommended for men’s basketball. (2023, May 5). NCAA.org. https://www.ncaa.org/news/2023/5/5/media-center-change-to-legal-guarding-position-recommended-for-mens-basketball.aspx</i></p>
+                <p><i>Page Restricted. (2025). Misspompadour.com. https://www.misspompadour.com/c/l/tile-lacquer/green/</i></p>
+                <p><i>Boyle, E., & Loeffler, J. (2022, July 20). Marvel’s Spider-Man Remastered PC features revealed in a brand new trailer. TechRadar. https://www.techradar.com/news/marvels-spider-man-remastered-pc-features-revealed-in-a-brand-new-trailer</i></p>
+                <p><i>bong. (2021, September 2). Rainy Season Tips: How To Protect Your Home | Island Paints. Island Paints. https://islandpaints.com/home-decorating-tips/rainy-season-tips-how-to-protect-your-home/</i></p>
+                <p><i>Vanilla Ice Cream. (n.d.). Washington Post. https://www.washingtonpost.com/recipes/vanilla-custard-ice-cream/</i></p>
+                <p><i>(2018). Mama’s Fried Chicken. Southern Living. https://www.southernliving.com/recipes/mamas-fried-chicken</i></p>
+                <p><i>South China Morning Post. (2022, July 4). South China Morning Post. https://www.scmp.com/news/asia/east-asia/article/3184007/tourists-are-returning-japans-kyoto-not-everyones-happy-about</i></p>
+                <p><i>Plait, P. (2024, November 22). Why Is the Night Sky Dark? You Can Thank the Big Bang. Scientific American. https://www.scientificamerican.com/article/why-is-the-night-sky-dark-olbers/</i></p>
+                <p><i>Envato Pty Ltd. (2024). Envato. https://elements.envato.com/weary-face-emoji-icon-TBK7M7M</i></p>
+                <p><i>Kulkarni, P. (2024, April 18). Taurus zodiac sign personality traits, compatibility, love life & everything else to know. Lifestyle Asia Hong Kong. https://www.lifestyleasia.com/hk/astrology/taurus-personality-traits-compatibility-love-career/</i></p>
+                <p><i>Valdez, N. (2025, January 12). The Amazing World of Gumball Is Finally Coming Back With New Episodes Soon. ComicBook.com. https://comicbook.com/anime/news/the-amazing-world-of-gumball-season-7-episodes-2025/</i></p>
+                <p><i>Download yinyang wallpapers for desktop free. High Quality HD pictures wallpapers - Page 1. (2025). Wallpapers4screen.com. https://wallpapers4screen.com/tags/yinyang</i></p>
+                <p><i>updated, L. G. last. (2022, July 25). “Bold theory” that Tyrannosaurus rex is 3 species gets stomped to pieces. Livescience.com. https://www.livescience.com/tyrannosaurus-rex-is-one-species</i></p>
+                <p><i>Kohli, N. (2024, February 15). Branded and bottled: Why mineral water is the new good health trend. @Bsindia; Business Standard. https://www.business-standard.com/finance/personal-finance/branded-and-bottled-why-mineral-water-is-the-new-good-health-trend-124021500721_1.html</i></p>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content fade-in">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>omad</span>
+            </div>
+            <div class="social-media">
+                <span>Follow me</span>
+                <a href="https://www.facebook.com/charles.nicart.9/" target="_blank"><img src="img/fb-white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/nicartdarrel/" target="_blank"><img src="img/ig-white.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="quote">
+            <p>"There are many types of monsters that scare me: Monsters who cause trouble without showing themselves, monsters who abduct children, monsters who devour dreams, monsters who suck blood... and then, monsters who tell nothing but lies. Lying monsters are a real nuisance: They are much more cunning than others. They pose as humans even though they have no understanding of the human heart; they eat even though they’ve never experienced hunger; they study even though they have no interest in academics; they seek friendship even though they do not know how to love. If I were to encounter such monsters, I would likely be eaten by them... because in truth, I am that monster." - L</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |   
+            <a href="trends.html">Know me well</a> |
+            <a href="personality.html">Personality types</a> |
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="about.html">About</a>
+        </div>
+        <div class="copyright">
+            © 2025 - 2030 Nomad | All Rights Reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

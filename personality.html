@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality types</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="personality.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">&lt;</a>
+                <a href="index.html">HOME</a>
+                <a href="trends.html">KNOW ME WELL</a>
+                <a href="personality.html">PERSONALITY TYPES</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="header">
+            <div class="container">
+                <h1 class="text-center">Personality Types</h1>
+                <p class="text-center text-muted">Know more about MBTI personality types</p>
+            </div>
+        </div>
+
+        <div class="container mb-4">
+            <form id="searchForm" class="d-flex">
+                <input class="form-control me-2" 
+                    id="searchInput"
+                    type="search" 
+                    placeholder="Search types (INTJ), traits (creative), jobs (engineer)..." 
+                    aria-label="Search">
+                <button id="clearButton" class="btn btn-outline-secondary ms-2" type="button">Clear</button>
+            </form>
+        </div>
+
+        <div class="container mb-5">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>type</th>
+                            <th>full_name</th>
+                            <th>description</th>
+                            <th>strengths</th>
+                            <th>weaknesses</th>
+                            <th>worst_jobs</th>
+                            <th>best_jobs</th>
+                            <th>compatibility</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INTJ</td>
+                            <td>Introverted Intuitive Thinking Judging</td>
+                            <td>Strategic and logical masterminds.</td>
+                            <td>Strategic, independent, decisive</td>
+                            <td>Arrogant, judgmental, distant</td>
+                            <td>Receptionist, Customer Service</td>
+                            <td>Scientist, CEO, Engineer</td>
+                            <td>ENFP, ENTJ, INFJ</td>
+                        </tr>
+                        <tr>
+                            <td>INTP</td>
+                            <td>Introverted Intuitive Thinking Perceiving</td>
+                            <td>Innovative and curious thinkers.</td>
+                            <td>Analytical, open-minded, inventive</td>
+                            <td>Absent-minded, insensitive</td>
+                            <td>Sales, Bureaucratic Jobs</td>
+                            <td>Researcher, Programmer</td>
+                            <td>ENTP, INTJ, ENFP</td>
+                        </tr>
+                        <tr>
+                            <td>ENTJ</td>
+                            <td>Extraverted Intuitive Thinking Judging</td>
+                            <td>Bold leaders and strategic planners.</td>
+                            <td>Confident, efficient, energetic</td>
+                            <td>Stubborn, impatient</td>
+                            <td>Data Entry, Librarian</td>
+                            <td>Entrepreneur, Lawyer</td>
+                            <td>INTJ, ENTJ, ENFP</td>
+                        </tr>
+                        <tr>
+                            <td>ENTP</td>
+                            <td>Extraverted Intuitive Thinking Perceiving</td>
+                            <td>Energetic and spontaneous debaters.</td>
+                            <td>Quick-witted, charismatic, fearless</td>
+                            <td>Argumentative, unfocused</td>
+                            <td>Accounting, Clerical Work</td>
+                            <td>Entrepreneur, Journalist</td>
+                            <td>INFJ, INTJ, ENFP</td>
+                        </tr>
+                        <tr>
+                            <td>INFJ</td>
+                            <td>Introverted Intuitive Feeling Judging</td>
+                            <td>Deep thinkers with strong values.</td>
+                            <td>Insightful, passionate, altruistic</td>
+                            <td>Sensitive, perfectionist</td>
+                            <td>Sales, Military</td>
+                            <td>Psychologist, Writer</td>
+                            <td>ENTP, ENFP, INTJ</td>
+                        </tr>
+                        <tr>
+                            <td>INFP</td>
+                            <td>Introverted Intuitive Feeling Perceiving</td>
+                            <td>Idealistic dreamers and mediators.</td>
+                            <td>Empathetic, creative, adaptable</td>
+                            <td>Overly emotional, impractical</td>
+                            <td>Corporate Management, Law</td>
+                            <td>Writer, Therapist</td>
+                            <td>ENFJ, INFJ, ENFP</td>
+                        </tr>
+                        <tr>
+                            <td>ENFJ</td>
+                            <td>Extraverted Intuitive Feeling Judging</td>
+                            <td>Inspiring leaders and motivators.</td>
+                            <td>Charismatic, altruistic, persuasive</td>
+                            <td>Overcommitted, overly idealistic</td>
+                            <td>Isolated Work, Data Entry</td>
+                            <td>Teacher, Speaker</td>
+                            <td>INFJ, INFP, ENTJ</td>
+                        </tr>
+                        <tr>
+                            <td>ENFP</td>
+                            <td>Extraverted Intuitive Feeling Perceiving</td>
+                            <td>Enthusiastic, creative, and social free spirits.</td>
+                            <td>Charismatic, energetic, spontaneous</td>
+                            <td>Overly emotional, unfocused</td>
+                            <td>Accountant, Military</td>
+                            <td>Actor, Journalist, Speaker</td>
+                            <td>INFJ, INTJ, ENTP</td>
+                        </tr>
+                        <tr>
+                            <td>ISTJ</td>
+                            <td>Introverted Sensing Thinking Judging</td>
+                            <td>Practical and dependable traditionalists.</td>
+                            <td>Responsible, organized, logical</td>
+                            <td>Stubborn, overly serious</td>
+                            <td>Marketing, Artistic Work</td>
+                            <td>Accountant, Engineer</td>
+                            <td>ESTJ, ISFJ, ISTP</td>
+                        </tr>
+                        <tr>
+                            <td>ISFJ</td>
+                            <td>Introverted Sensing Feeling Judging</td>
+                            <td>Caring and dedicated protectors.</td>
+                            <td>Loyal, kind, meticulous</td>
+                            <td>Overly selfless, resistant to change</td>
+                            <td>Entrepreneur, High-Stress Jobs</td>
+                            <td>Nurse, Social Worker</td>
+                            <td>ESFJ, ISTJ, ESTP</td>
+                        </tr>
+                        <tr>
+                            <td>ESTJ</td>
+                            <td>Extraverted Sensing Thinking Judging</td>
+                            <td>Efficient organizers and leaders.</td>
+                            <td>Strong-willed, practical, reliable</td>
+                            <td>Stubborn, inflexible</td>
+                            <td>Creative Writing, Therapy</td>
+                            <td>CEO, Manager, Lawyer</td>
+                            <td>ISTJ, ESTP, ENTJ</td>
+                        </tr>
+                        <tr>
+                            <td>ESFJ</td>
+                            <td>Extraverted Sensing Feeling Judging</td>
+                            <td>Social and caring community builders.</td>
+                            <td>Supportive, responsible, friendly</td>
+                            <td>Approval-seeking, sensitive</td>
+                            <td>Freelance, Isolated Jobs</td>
+                            <td>Teacher, HR Specialist</td>
+                            <td>ISFJ, ESTJ, ENFJ</td>
+                        </tr>
+                        <tr>
+                            <td>ISTP</td>
+                            <td>Introverted Sensing Thinking Perceiving</td>
+                            <td>Practical, hands-on problem solvers.</td>
+                            <td>Adaptable, logical, resourceful</td>
+                            <td>Impulsive, risk-prone</td>
+                            <td>Highly Social Work, Teaching</td>
+                            <td>Engineer, Pilot, Mechanic</td>
+                            <td>ESTP, ISTJ, INTP</td>
+                        </tr>
+                        <tr>
+                            <td>ISFP</td>
+                            <td>Introverted Sensing Feeling Perceiving</td>
+                            <td>Artistic, sensitive, and spontaneous.</td>
+                            <td>Creative, independent, kind</td>
+                            <td>Easily stressed, unpredictable</td>
+                            <td>Data Entry, Law</td>
+                            <td>Musician, Chef, Designer</td>
+                            <td>ESFP, INFJ, ENFP</td>
+                        </tr>
+                        <tr>
+                            <td>ESTP</td>
+                            <td>Extraverted Sensing Thinking Perceiving</td>
+                            <td>Energetic, thrill-seeking risk-takers.</td>
+                            <td>Bold, practical, persuasive</td>
+                            <td>Impatient, reckless</td>
+                            <td>Writing, Accounting</td>
+                            <td>Salesperson, Athlete</td>
+                            <td>ISTP, ESTJ, ESFP</td>
+                        </tr>
+                        <tr>
+                            <td>ESFP</td>
+                            <td>Extraverted Sensing Feeling Perceiving</td>
+                            <td>Fun-loving and spontaneous entertainers.</td>
+                            <td>Outgoing, enthusiastic, fun-loving</td>
+                            <td>Easily bored, attention-seeking</td>
+                            <td>Research, Military</td>
+                            <td>Performer, Public Speaker</td>
+                            <td>ISFP, ESTP, ENFP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="reference-trigger fade-in">
+        <button onclick="toggleReferenceModal()">Click here to see references (APA Style)</button>
+    </div>
+    <div id="referenceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleReferenceModal()">&times;</span>
+            <h3>References (APA Style)</h3>
+            <div class="apa-references">
+                <p><i>Indeed Editorial Team. (2023, August 2). Job Compatibility for the 16 Myers-Briggs Personality Types (Chart Included). Indeed Career Guide. https://www.indeed.com/career-advice/finding-a-job/jobs-for-myers-briggs-personality-type</i></p>
+                <p><i>The Worst Job For Each of the 16 Personality Types. (2024, August 7). True You Journal. https://www.truity.com/blog/worst-job-each-16-personality-types</i></p>
+                <p><i>NERIS Analytics Limited. (2011). Personality Types. 16personalities.com; NERIS Analytics Limited. https://www.16personalities.com/personality-types</i></p>
+                <p><i>NERIS Analytics Limited. (2013). Defender Personality: Strengths & Weaknesses. 16Personalities; NERIS Analytics Limited. https://www.16personalities.com/isfj-strengths-and-weaknesses</i></p>
+                <p><i>Simplified Myers Briggs Type Compatibility Chart. (n.d.). https://www.dreamsaroundtheworld.com/wp-content/uploads/2017/01/Myers_Briggs_Type_Compatibility_Chart.pdf</i></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content fade-in">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>omad</span>
+            </div>
+            <div class="social-media">
+                <span>Follow me</span>
+                <a href="https://www.facebook.com/charles.nicart.9/" target="_blank"><img src="img/fb-white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/nicartdarrel/" target="_blank"><img src="img/ig-white.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="quote">
+            <p>"There are many types of monsters that scare me: Monsters who cause trouble without showing themselves, monsters who abduct children, monsters who devour dreams, monsters who suck blood... and then, monsters who tell nothing but lies. Lying monsters are a real nuisance: They are much more cunning than others. They pose as humans even though they have no understanding of the human heart; they eat even though they’ve never experienced hunger; they study even though they have no interest in academics; they seek friendship even though they do not know how to love. If I were to encounter such monsters, I would likely be eaten by them... because in truth, I am that monster." - L</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |   
+            <a href="trends.html">Know me well</a> |
+            <a href="personality.html">Personality types</a> |
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="about.html">About</a>
+        </div>
+        <div class="copyright">
+            © 2025 - 2030 Nomad | All Rights Reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
